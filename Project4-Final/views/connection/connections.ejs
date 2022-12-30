@@ -1,0 +1,52 @@
+<%- include('../partials/header.ejs') %>
+<main class="connectionsMain">
+  <div class="connectionslist">
+      
+    <% if (connections.length) { %>
+      <!-- <p>Select an event to read</p> -->
+      <h2>Study</h2>
+      <% connections.forEach(connections => { %>
+        <% if (connections.topic === 'Study') { %>
+          <a href="/connections/<%= connections.id %>"> <p><%= connections.title %></p> </a>
+      
+      
+      <% }  %>
+      <% }); %>
+    <% }  else { %>
+      <p>There are no events to display</p>
+
+        <% } %>
+        <% if (connections.length) { %>
+          <!-- <p>Select an event to read</p> -->
+          <h2>Interview Prep </h2>
+          <% connections.forEach(connections => { %>
+            <% if (connections.topic === 'Interview Prep') { %>
+              <a href="/connections/<%= connections.id %>"> <p><%= connections.title %></p> </a>
+          
+          
+          <% }  %>
+          <% }); %>
+        <% }  else { %>
+          <p>There are no events to display</p>
+    
+            <% } %>
+      
+  </div>
+</main>
+<%- include('../partials/footer.ejs') %>
+
+
+<!-- 
+  <h4>Study</h4>
+        <ul>
+          <li> <a href="connection.html">ITCS-3153: Implement 8-Queens Board Game</a></li>
+          <li> <a href="connection.html">ITSC-2214: Data Structures Review</a></li>
+          <li> <a href="connection.html">ITSc-3181: What is Assembly Language?</a></li>
+        </ul>
+        <h4>Interview Prep</h4>
+        <ul>
+          <li> <a href="connection.html">Leetcode Grinding</a></li>
+          <li> <a href="connection.html">Data Structures for Interview</a></li>
+          <li> <a href="connection.html">Resume Build-Up</a></li>
+        </ul>
+ -->

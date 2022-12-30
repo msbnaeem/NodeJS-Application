@@ -1,0 +1,47 @@
+<%- include('../partials/header.ejs')%>
+<main class="newConnectionMain">
+  <div class="newConnectionDiv1">
+
+      <div class="newconnectionslist">
+        <form class="newConnect" action="/connections" method="post">
+
+
+          <label for="topic">Topic </label>
+          <td>
+            <select name="topic" id="topic">
+            <option value="Study">Study</option>
+            <option value="Interview Prep">Interview Prep</option>
+            </select>
+          </td>
+          <!-- <input id="topic" type="text" name="topic" placeholder="topic..." /> -->
+
+          <label for="title">Title </label>
+          <input id="title" type="text" name="title" placeholder="title..." required/>
+        
+          <label for="date">Date</label>
+          <input id="date" type="date" name="date" required/>        
+
+          <label for="stime">Start</label>
+          <input id="stime" type="time" name="startTime" required/>
+
+          <label for="etime">End</label>
+          <input id="etime" type="time" name="endTime" required/>
+
+          <label for="location">Location </label>
+          <input id="location" type="text" name="location" placeholder="Where..." required/>
+
+          <label for="imgurl">Image URL</label>
+          <input id="imgurl" type="url"  placeholder="insert image URL here" name="image" required/>
+
+          <label for="details">Details</label>
+          <textarea id="details" rows="2" name="details" placeholder="description..." minlength="10" required></textarea>
+
+          <!-- <a href="connections.html">Create Connection</a> -->
+            <button type="submit" name="cc">Create Connection</button>              
+
+        </form>
+      </div>
+
+  </div>
+</main>
+<%- include('../partials/footer.ejs')%>
