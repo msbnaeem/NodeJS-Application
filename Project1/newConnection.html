@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- css link -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="Comp.gif">
+    <title>Create Connection</title>
+  </head>
+  <body>
+    <header>
+      <!-- <link rel="icon" href="index.html" > -->
+      <!-- <h1 class='logo'> <a href="Comp.gif">LOGO</a></h1> -->
+      <a href="index.html"><img src="Comp.gif" class="homelogo" alt="Logo"></a>
+
+      <nav class="userNav">
+        <ul>
+          <li> <a href="newConnection.html">Login</a></li>
+          <li>|</li>
+          <li> <a href="newConnection.html">Sign Up</a></li>
+          <li>|</li>
+          <li> <a href="newConnection.html">Begin Connection</a></li>
+        </ul>
+      </nav>
+      <hr>
+      <nav class="geneNav">
+        <ul>
+          <li> <a href="connections.html">Connections</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="newConnectionMain">
+      <div class="newConnectionDiv1">
+
+          <div class="newconnectionslist">
+            <form class="newConnect" action="connections.html" method="post">
+
+
+              <label for="topic">Topic </label>
+              <input id="topic" type="text" name="Topic" placeholder="topic..." />
+
+              <label for="title">Title </label>
+              <input id="title" type="text" name="Title" placeholder="title..." />
+
+              <label for="host">Host </label>
+              <input id="host" type="text" name="Host" placeholder="host..." />
+
+              <label for="details">Details</label>
+              <textarea id="details" rows="2" name="details" placeholder="description..."></textarea>
+
+              <label for="date">When</label>
+              <input id="date" type="date" name="Date"/>
+
+              <label for="stime">Start</label>
+              <input id="stime" type="time" name="clock"/>
+
+              <label for="etime">End</label>
+              <input id="etime" type="time" name="clock"/>
+
+              <label for="imgurl">Image URL</label>
+              <input id="imgurl" type="url"  placeholder="insert image URL here" />
+
+              <!-- <a href="connections.html">Create Connection</a> -->
+                <button type="submit" name="cc">Create Connection</button>              
+
+            </form>
+          </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy;CSM
+      </p>
+      <!-- <nav> -->
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+      <a href="#" class="fa fa-facebook">Facebook</a>
+      <a href="#" class="fa fa-twitter">Twitter</a>
+
+      <!-- </nav> -->
+    </footer>
+  </body>
+</html>
