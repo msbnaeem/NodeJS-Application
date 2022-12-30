@@ -1,0 +1,249 @@
+////////////////////////////////////////////////////
+// DESIGN TOOLS CONFIG                            //
+////////////////////////////////////////////////////
+// Copyright (C) 2017  Utah State University
+var DT_variables = {
+        iframeID: '',
+        // Path to the hosted USU Design Tools
+        path: 'https://designtools.ciditools.com/',
+        templateCourse: '147464',
+        // OPTIONAL: Button will be hidden from view until launched using shortcut keys
+        hideButton: false,
+    	 // OPTIONAL: Limit by course format
+	     limitByFormat: false, // Change to true to limit by format
+	     // adjust the formats as needed. Format must be set for the course and in this array for tools to load
+	     formatArray: [
+            'online',
+            'on-campus',
+            'blended'
+        ],
+        // OPTIONAL: Limit tools loading by users role
+        limitByRole: false, // set to true to limit to roles in the roleArray
+        // adjust roles as needed
+        roleArray: [
+            'student',
+            'teacher',
+            'admin'
+        ],
+        // OPTIONAL: Limit tools to an array of Canvas user IDs
+        limitByUser: true, // Change to true to limit by user
+        // add users to array (Canvas user ID not SIS user ID)
+        userArray: [
+            '80147',  // rwahl
+            '85269',  // rwahl_a
+            '82',     // jan5
+            '3223',   // jan5_a
+            '194198', // bstampe1
+            '205147', // bstampe1_a
+            '194199', // sgist4
+            '211507', // sgist4_a
+            '196878', // oozdemir
+            '205237', // oozdemir_a
+            '21890',  // afrizze2
+            '4105',   // rprevill
+            '20195',  // ktroscla
+            '13743',  // epark17
+            '122539', // epark17_a
+            '198262', // fbakerii
+            '202867', // fbakeriii_a
+            '4292',   // jltoth1
+            '87936',  // jltoth1_a
+            '83',     // jkapota
+            '3224',   // jkapota_a
+            '16500',  // jkeithle
+            '107186', // jkeithle_a
+            '30018',  // kbudhran
+            '90785',  // kbudhran_a
+            '35',     // cgordon2
+            '3088',   // cgordon2_a
+            '32',     // jjmeier
+            // Requested by Lynn Wahl 3/24/2021:
+            '2857',   // dtaylo72
+            // Requested by Lynn Wahl 4/30/2021:
+            '92254',  // ssmit392
+            '57',     // mmaher9
+            '7225',   // sdhancoc
+            '64',     // abpolly
+            '2856',   // jrtaylor
+            '58955',  // jwei8
+            '7208',   // wjdibias
+            '191430', // mroman7
+            '8105',   // tjkitric
+            '27916',  // mlamarca
+            '31566',  // dgardn32
+            '31567',  // cranda10
+            '4124',   // ebyker
+            '8393',   // agood5
+            '106948', // tcrocke7
+            '6127',   // drowan
+            '56722',  // ddalto14
+            // Requested by Lynn Wahl 5/6/2021:
+            '8269',   // abarsant
+            '6155',   // ppilonie
+            '10394',  // amyers35
+            // Requested by Lynn Wahl 6/9/2021:
+            '7359',   // awill143
+            // Requested by Lynn Wahl 6/17/2021:
+            '9214',   // hstutts
+            '8615',   // chmahaff
+            // Requested by Lynn Wahl 7/1/2021:
+            '5991',   // mrand1
+            '78592',  // mbarne56
+            '117485', // thales
+            '37374',  // dbryan30
+            '6544',   // tcaldw16
+            '58957',  // jbahamon
+            '153828', // aberardinelli
+            '86941',  // mlee173
+            '7228',   // plthomps
+            '37376',  // xniu2
+            '156299', // geldridg
+            '81',     // davils
+            '7941',   // mjshephe
+            '7982',   // esheberl
+            '153827', // tmannahb
+            '8743',   // pgaggl
+            '6705',   // ydiao
+            '35325',  // ewantlan
+            // Requested by Lynn Wahl 7/23/2021:
+            '7493',   // kkmurray
+            // Requested by Lynn Wahl 7/26/2021:
+            '229534', // cmuellen
+            // Requested by Lynn Wahl 7/28/2021:
+            '10041',  // jhumphr1
+            '202949', // kwater12
+            // Requested by Lynn Wahl 10/15/2021:
+            '155687', // kdutt1
+            '153289', // spettway
+            // Requested by Lynn Wahl 12/2/2021:
+            // *Dupe* '106948', // tcrocke7
+            '143766', // spotochn
+            '61451',  // dpowel24
+            '4017',   // jwhit241
+            '2174',   // jwalsh25
+            // *Dupe* '117485', // thales
+            '4753',   // kdshue
+            '41985',  // lreinke
+            '133711', // mfitzg21
+            '40308',  // jmill283
+            '6470',   // dskerr
+            '4136',   // serevell
+            '153828', // aberard1
+            // *Dupe* '81',     // davils
+            '54',     // mjkhouja
+            '11624',  // jgooty
+            // *Dupe* '6544',   // tcaldw16
+            '151469', // ndawson2
+            // Requested by Sam Gist 1/6/2022:
+            '246788', // mairoldi
+            // Requested by Sam Gist 2/17/2022:
+            '49108',  // dalsto13
+            '62368',  // ddiegman
+            '239187', // kwagne29
+            '11407',  // ldymes
+            '21799',  // kcrouch1
+            '21519',  // crwhites
+            '164',    // gbanks3
+            '13636',  // mmetzgar
+            '8432',   // ichiang1
+            '6346',   // msjohar
+            '6134',   // kzhao2
+            '19576',  // jpiatak
+            '79294',  // jwindett
+            '4282',   // nanajjar
+            '6497',   // mestearn
+            '2855',   // mfmckenz
+            '135440', // ewashbu1
+            '230177', // cmuellen_a
+            '253152', // mairoldi_a
+            // Requested by Lynn Wahl 3/21/2022:
+            '216115', // jande215
+            // Requested by Lynn Wahl 3/24/2022:
+            '29455',  // khammac
+            // Requested by Lynn Wahl 4/5/2022:
+            '6645',   // kmclark1
+            // Requested by Lynn Wahl 4/20/2022:
+            '59',     // fmartin3
+            // Requested by Lynn Wahl 5/10/2022:
+            '73161',  // cmelling
+            // Requested by Lynn Wahl 6/13/2022:
+            '9743',   // sabtbum
+            // Requested by Lynn Wahl 6/13/2022:
+            '223281', // mmack13
+            // Requested by Sam Gist 6/17/2022:
+            '8454',   // xhe8
+            '7962',   // theafner
+            '8159',   // njcaste
+            '127167', // mchen37
+            // *Dupe* '2855',   // mfmckenz
+            '16616',  // kjason
+            // *Dupe* '4753',   // kdshue
+            '6647',   // jlrolsto
+            '8025',   // jdianesm
+            '5092',   // jchattop
+            '103019', // tmcguffi
+            // *Dupe* '21519',  // crwhites
+            '43962',  // asadaf
+            '141695', // amickels
+            // Requested by Lynn Wahl 6/23/2022:
+            '13670',  // tmjohnso
+            // Requested by Lynn Wahl 7/29/2022:
+            '69023',  // pcolema1
+            // Requested by Lynn Wahl 8/1/2022:
+            '268976', // hechols
+            // Requested by Lynn Wahl 8/19/2022:
+            '40702',   // jjohn496
+            // Requested by Sam Gist 9/20/2022:
+            '4851',   // jgiersch
+            '6344',   // jjszmer
+            '8364',   // adekort
+            '159670', // bpatte38
+            '7248',   // vvcifare
+            '12927',  // sputman
+            '119443', // jgarci43
+            '3849',   // ntriple1
+            '50068',  // jsmithw1
+            '88090',  // dkirkey
+            '6128'   // afernan2
+            // *Dupe* '2856'   // jrtaylor
+            // *Dupe* '43962'   // asadaf
+        ]
+};
+
+// Run the necessary code when a page loads
+$(document).ready(function () {
+    'use strict';
+    // This runs code that looks at each page and determines what controls to create
+    $.getScript(DT_variables.path + 'js/master_controls.js', function () {
+        console.log('master_controls.js loaded');
+    });
+});
+////////////////////////////////////////////////////
+// END DESIGN TOOLS CONFIG                        //
+////////////////////////////////////////////////////
+$(document).ready(function(){
+	$('label[for=pseudonym_session_unique_id_forgot]').html('Email address');
+
+	$('#allowed_extensions_container #explanation_nest').html('Enter a list of accepted extensions, for example: doc, docx, xls, xlsx, txt');
+
+	// Hide delete and reset buttons on course settings page for non-admins
+	if (/^\/courses\/[0-9]+\/settings$/.test(window.location.pathname)) {
+		if($.inArray('admin',ENV.current_user_roles) == -1){
+			$('a[href*=\'confirm_action?event=delete\']').hide();
+			//$('a[href*=\'/reset\']').hide();
+		}
+	}
+
+	var current_term = $("#section-tabs-header-subtitle").text();
+	//if (current_term == 'Spring 2020') {
+		if ($("#assignment_vericite_enabled").is(":checked")) {
+			$('label[for=assignment_vericite_enabled]').show();
+		} else {
+			$('label[for=assignment_vericite_enabled]').hide();
+		}
+	//}
+});
+
+var forgot_password_instructions = "Enter your Email address and we'll send you a link to change your password."
+document.getElementById("forgot_password_instructions").innerHTML = forgot_password_instructions;
+//document.getElementsByTagName("label")[2].firstChild.data = "Email address";
