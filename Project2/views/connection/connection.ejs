@@ -1,0 +1,74 @@
+<%- include('../partials/header.ejs')%>
+
+<main class="connectionMain">
+  <div class="container13153">
+
+    <article class="titAndBut3153">
+      <h4><%= connection.title %></h4>
+      <div>
+        
+        <form class="buttons3153" action="connections.ejs" method="post">
+          <button type="submit" formmethod = "GET" formaction="/connections/<%=connection.id%>/edit">Edit</button>
+          <button type="submit" formmethod = "POST" formaction="/connections/<%=connection.id%>?_method=Delete">Delete</button>
+        </form>
+        
+      </div>
+    </article>
+
+    <div class="firstDivConnectionMain">
+      <div class="image1">
+        <img src="<%= connection.image %>" class="images" alt="image">
+      </div>
+
+        <div class="div3153">
+          <ul>
+            <li><h3>Hosted by <%=connection.host%></h3></li>
+            <li><%=connection.date%></li>
+            <li><%=connection.startTime%> - <%=connection.endTime%></li> <br>
+            <li><%=connection.location%></li>
+          </ul>
+        </div>
+    </div>
+    <h4 class="details3153">Details</h4>
+    <div><%=connection.details%></div>    
+  </div>
+</main>
+<%- include('../partials/footer.ejs')%>
+<!-- <main class="connectionMain">
+  <div class="container13153">
+
+    <article class="titAndBut3153">
+      <h4>ITCS-3153: Implement 8-Queens Board Game</h4>
+      <div>
+        
+        <form class="buttons3153" action="connections.html" method="post">
+          <button type="submit" formmethod = "GET" formaction="/connections/<%=connection.id%>/edit">Edit</button>
+          <button type="submit" formmethod = "POST" formaction="/connections/<%=connection.id%>?_method=Delete">Delete</button>
+        </form>
+        
+      </div>
+    </article>
+
+    <div class="firstDivConnectionMain">
+      <div class="image1">
+        <ul>
+          <li><img src="artificial-intelligencePic.jpg" class="AI-BOT" alt="AI-BOT"></li>
+        </ul>
+      </div>
+
+        <div class="div3153">
+          <ul>
+            <li><h5>Hosted By College of Computing and Informatics</h5></li>
+            <li><p>Monday, October 2, 2022</p></li>
+            <li><p>11:00am - 1:00pm</p></li>
+            <li><p>Woodward Hall 1st floor Room 140</p></li>
+          </ul>
+        </div>
+    </div>
+    <h4 class="details3153">Details</h4>
+    
+      <p>I am from Java bakground and cannot do such project in Python which <br> I never touched. I want some support.</p>
+    
+  </div>
+
+</main> -->

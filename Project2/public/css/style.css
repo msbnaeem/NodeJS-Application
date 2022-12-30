@@ -1,0 +1,256 @@
+.homelogo{
+  width: 100px;
+  height: 100px;
+}
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+/* body, main{
+  width: 100%;
+  min-height: 100vh;
+} */
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  /* border-bottom: Solid #7B7D7D; */
+  padding: 10px 25px 15px 25px;
+  /* background-color: #C0C0C0; */
+  background-color: #232b2b;
+  height: 150px;
+  /* color: #FAEE04; */
+  color: lightblue;
+  /* position: fixed;
+  width: 100%; */
+}
+
+.userNav ul li{
+  display: inline;
+  float: right;
+  padding: 15px;
+  padding-right: 50px;
+  position: relative;
+  top: -50px;
+}
+
+.userNav ul li a, .geneNav ul li a{
+  text-decoration: none;
+  border: 2px;
+  color: #40E0D0;
+}
+
+hr{
+  position: relative;
+  top: -60px;
+  width: 100%;
+  border: solid lightblue thin;
+}
+
+.userNav li a:hover, .geneNav li a:hover, footer a:hover, footer p:hover{
+  color: yellow;
+  /* border-radius: 25%;
+  border-width: thick; */
+}
+
+.geneNav{
+  position: relative;
+  bottom: 70px;
+  left: -40px;
+}
+
+.geneNav ul{
+  list-style: none;
+}
+
+.connectionslist ul{
+  list-style: none;
+}
+
+.connectionslist ul li a{
+  text-decoration: none;
+  color: brown;
+  font-size: 15pt;
+}
+.connectionslist ul li a:hover{
+  color: green;
+  /* background-color: black; */
+}
+
+/* common main */
+main{
+  /* border: 3px solid brown; */
+  padding: 200px 30px 350px 190px;
+  display: block;
+  font-size: 20pt;
+  margin: auto;
+  text-align: left;
+  /* background-color: #6A673A; */
+  background-color: #E2DFD2; /* this is pearl color*/
+  color: black;
+  min-height: 100%;
+}
+
+.connectionsMain{
+  padding: 100px 0px 350px 250px;
+  /* padding: auto; */
+  font-size: 14pt;
+}
+
+/* Connection.html main */
+.connectionMain{
+  padding: 30px 0px 322px 400px;
+  display: block;
+  font-size: 14pt;
+  text-align:justify;
+  color: black;
+  justify-content: center;
+}
+
+.newConnectionMain{
+  padding: 200px 165px 159px 165px;
+
+  /* display: block; */
+  font-size: 14pt;
+  /* margin: auto; */
+  /* text-align: left; */
+  background-color: white;
+  background-color: #E2DFD2;
+  color: black;
+  /* justify-content: center; /
+
+}
+.newConnectionDiv1{
+  /* margin: auto; */
+  /* margin-right: 20%;
+  margin-left: 20%; */
+  /* align-items: center; */
+
+}
+
+
+.images{
+  width: 200px;
+  height: inherit;
+}
+
+ ul{
+  list-style: none;
+}
+
+.firstDivConnectionMain{
+  display: flex;
+}
+
+
+.titAndBut3153{
+  display: inline-flex;
+  justify-content: flex-start;
+}
+
+.buttons3153{
+  position: relative;
+  top: 26px;
+  right: -300px;
+}
+.buttons3153 button{
+  background-color: #232b2b;
+  color: #40E0D0;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.buttons3153 button:hover{
+  cursor: pointer;
+  color: yellow;
+}
+
+.div3153 ul{
+  position: relative;
+  top: -10px;
+}
+
+.newConnect{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  /* text-align: left; */
+}
+.newConnect button:hover, .editSubmit button:hover{
+  cursor: pointer;
+  color: yellow;
+}
+
+div[class=content]{
+  justify-content: center;
+  background-color: #E2DFD2;
+  min-height: 100%;
+}
+
+.editSubmit {
+  width: 60%;
+  padding: 10px; 
+}
+.align-right{
+  text-align: right;
+}
+
+input[type=text], input[type=date], input[type=time], textarea{
+  width: 90%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.details3153 ul{
+  max-width: 2px;
+}
+
+.newConnect{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 500px;
+  top: -80px;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* left: 500px;
+  top: -80px; */
+}
+
+button[name=cc]{
+  float: right;
+  margin-top: 5px;
+  background-color:#232b2b;
+  color: #40E0D0;
+}
+
+/* footer */
+footer{
+  /* border-top: solid #FAEE04; */
+  display: flex;
+  background-color: #232b2b;
+  justify-content: space-around ;
+  padding: 7px;
+  /* position: static; */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* footer descends a */
+footer a, footer p{
+  color: #40E0D0;
+  text-decoration: none;
+  cursor: pointer
+}
+footer a{
+  margin-top: 16px;
+}

@@ -1,0 +1,121 @@
+/*********************************************************************/
+/***** BEGIN DESIGN TOOLS THEME IMPORT & CUSTOMIZATION  **************/
+/*********************************************************************/
+/* Import statements need to be at the top of your CSS file */
+/* For Main CSS file */
+@import url(https://designtools.ciditools.com/css/themes.css);
+/* For Mobile app CSS file */
+/*@import url(https://designtools.ciditools.com/css/app.css);*/
+/* Institution color customizations */
+@import url(https://designtools.ciditools.com/css/inst_theme_overrides.css);
+/* Theme Colors */
+:root {
+  --dt-color-primary: #005035;
+  --dt-color-primary-contrast: #FFFFFF;
+  --dt-color-primary-dark-text: #005035;
+  --dt-color-secondary: #A49665;
+  --dt-color-secondary-contrast: #000000;
+  --dt-color-secondary-dark-text: #6E6640;
+  --dt-color-accent: #000000;
+  --dt-color-accent-contrast: #FFFFFF;
+  --dt-color-graybg: #E6E6E6;
+  --dt-color-graybg-contrast: #000000;
+}
+/*********************************************************************/
+/***** END DESIGN TOOLS THEME IMPORT & CUSTOMIZATION  ****************/
+/*********************************************************************/
+.replies {  
+	padding-left: 7px;  
+	border-left: solid #f2f2f2 16px;  
+}  
+  
+.discussion-read-state-btn {  
+	top: 32px;  
+}  
+  
+div.entry-content {  
+	padding-left:0px !important;  
+}
+
+label[for="assignment_turnitin_enabled"] {
+	display: none;
+}
+
+a.default_link.no-hover {
+	display: none !important;
+}
+
+tr.channel.pseudonym_ {
+	height: 37px;
+}
+
+/*
+label[for="assignment_vericite_enabled"] {
+	display: none;
+}
+
+#advanced_turnitin_settings_link {
+	display: none;
+}
+*/
+.ic-DashboardCard__action-container {
+	box-sizing: border-box;
+	display: flex;
+	align-items: flex-end;
+	padding: 0 0 12px;
+	margin-top: 25px;
+	height: 2.5rem;
+	border: 1px;
+}
+.ic-DashboardCard__header-title.ellipsis {
+	white-space: normal;
+	overflow: auto;
+	text-overflow: ellipsis;
+}
+.ic-DashboardCard__header-subtitle {
+	line-height: 1.3;
+	padding: 0;
+	margin-top: 4px;
+	display: none;
+}
+/*
+.course-list-table .course-list-nickname-column {
+	width: 25%;
+	display: none;
+}
+*/
+.course-list-table .course-list-course-title-column, .course-list-table .course-list-not-favoritable, .course-list-table .course-list-group-column {
+	white-space: normal;  
+	overflow: visible;  
+	width: 35%;
+}
+
+.cjUyb_bGBk.cjUyb_eQnG, input.cjUyb_bGBk[type].cjUyb_eQnG {
+	letter-spacing: var(--cjUyb-letterSpacingNormal);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.ic-Login-header {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+
+#global_nav_conversations_link .menu-item-icon-container .menu-item__badge {
+	background: #B3A369;
+}
+
+code {
+	color: #A80000;
+}
+
+code, pre {
+	background: #F2F2F2;
+}
+
+label[for="assignment_vericite_enabled"]
+{
+    display:none;
+}
