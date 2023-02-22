@@ -1,1 +1,1 @@
-This Project had 4 milestones
+This Project had 4 milestones.
